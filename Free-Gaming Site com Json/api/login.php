@@ -52,8 +52,16 @@
         ENTRAR
       </button>
 
-      <?php if (isset($_GET['login']) && $_GET['login'] == 'erro'): ?>
-        <div class="alert alert-danger mt-3 text-center">Usuário ou senha inválidos</div>
+      <?php if (isset($_GET['erro'])): ?>
+        <div class="alert alert-danger mt-3 text-center">
+          <?php 
+            if($_GET['erro'] == 'login_invalido') echo "Usuário ou senha inválidos.";
+            if($_GET['erro'] == 'codigo_admin_incorreto') echo "Código de acesso Admin incorreto.";
+            if($_GET['erro'] == 'conta_admin_sem_checkbox') echo "Esta conta é de administrador. Marque 'Sou Admin'.";
+            if($_GET['erro'] == 'email_ja_cadastrado') echo "Este e-mail já está cadastrado no sistema.";
+            if($_GET['erro'] == 'campos_vazios') echo "Por favor, preencha todos os campos.";
+          ?>
+        </div>
       <?php endif; ?>
     </form>
   </div>
