@@ -67,7 +67,7 @@ if (!isset($_SESSION['autenticado'])){
       const slides = [
         {img: 'img/jegue-logo.png', title: 'Esmague o Jegue', desc: 'Divertasse esmagando jegues'},
         {img: 'img/jump-logo.png', title: 'Mario pula-pula', desc: 'Desafie-se a bater o recorde!'},
-        {img: 'img/bee-logo', title: 'Flap Bee', desc: 'Chegue mais longe que seus amigos'}
+        {img: 'img/bee-logo.png', title: 'Flap Bee', desc: 'Chegue mais longe que seus amigos'}
       ];
 
       // Laço de repetição para criar a estrutura HTML de cada slide com base na lista acima
