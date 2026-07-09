@@ -1,4 +1,9 @@
 <?php
+// Se a sessão ainda não tiver sido iniciada por outra página, inicia aqui
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 $username = $_SESSION['usuario_nome'] ?? '';
 if (isset($_SESSION['autenticado'])) {
     $login_logoff = 'SAIR';

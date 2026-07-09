@@ -8,7 +8,7 @@ if (!isset($_SESSION['autenticado'])){
     header('Location: login.php?login=erroGames');
     // Para a execução do script aqui para não enviar o HTML abaixo à toa
     exit; 
-} // Chave fechada corretamente aqui!
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -147,7 +147,7 @@ if (!isset($_SESSION['autenticado'])){
     })();
   </script>
   
-  <script src="js/main.js"></script> <?php 
+  <?php 
     // Inclui o arquivo de rodapé do site
     include("rodapé.php"); 
   ?>

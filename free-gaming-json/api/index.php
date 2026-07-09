@@ -1,6 +1,7 @@
 <?php session_start();
     if (!isset($_SESSION['autenticado'])){
         header('Location: login.php?login=erroIndex' );
+        exit;
     }
 ?>
 <!DOCTYPE html>
@@ -20,7 +21,6 @@
   <div style="height: 200px;">
   <!--conteudo-->
   </div>
-  <script src="js/main.js"></script>
   <?php include("rodapé.php"); ?>
     
   </body>
