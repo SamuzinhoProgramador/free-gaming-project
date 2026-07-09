@@ -12,7 +12,7 @@
     color: aliceblue;
 }
 #game-board{
-    background-image: url('Design\ sem\ nome\ \(14\).png');
+    background-image: url('fundo.png');
     height: 450px;
     position: relative;
 }

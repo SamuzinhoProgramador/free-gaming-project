@@ -11,7 +11,7 @@
 <body>
   <?php 
     if (!isset($_SESSION['autenticado'])){
-        header('Location: login.php?login=erroGames' );
+        header('Location: https://free-gaming-project.vercel.app/login.php?login=erroGames' );
     }
     include("cabecalho.php");
   ?>
