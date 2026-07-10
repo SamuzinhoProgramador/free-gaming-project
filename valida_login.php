@@ -13,6 +13,8 @@ $password = $_POST['password'] ?? '';
 $isAdmin = !empty($_POST['isAdmin']); 
 $AdminCode = trim((string)($_POST['adminCode'] ?? ''));  
 
+$latest = $_POST['latest'];
+
 $newName = $_POST['nameNew'] ?? '';       
 $newEmail = $_POST['emailNew'] ?? '';     
 $newPassword = $_POST['passwordNew'] ?? '';
@@ -49,14 +51,14 @@ if ($acao === 'login') {
                 $_SESSION['usuario_nome'] = $usuarioEncontrado['nome'];
                 $_SESSION['autenticado'] = 'yes';
                 $_SESSION['is_admin'] = true;
-                header('Location: index.php');
+                header('Location: '.$latest.'.php');
                 exit;
             }
         } else {
             $_SESSION['usuario_nome'] = $usuarioEncontrado['nome'];
             $_SESSION['autenticado'] = 'yes';
             $_SESSION['is_admin'] = false;
-            header('Location: index.php');
+            header('Location: '.$latest.'.php');
             exit;
         }
     } else {
@@ -100,7 +102,7 @@ elseif ($acao === 'cadastro') {
     $_SESSION['usuario_nome'] = $newName;
     $_SESSION['autenticado'] = 'yes';
     $_SESSION['is_admin'] = false;
-    header('Location: index.php');
+    header('Location: '.$latest.'.php');
     exit;
 }
 ?>

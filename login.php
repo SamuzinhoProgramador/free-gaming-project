@@ -24,7 +24,7 @@ if (isset($_SESSION['autenticado'])){
     <div class="text-center mb-4">
       <?php 
         $msg = "Login";
-        $latest = "Index";
+        $latest = "index";
         if(isset($_GET['login'])) {
             if($_GET['login'] == 'erroGames'){ 
               $msg = "Faça Login para acessar os Jogos";
@@ -32,7 +32,6 @@ if (isset($_SESSION['autenticado'])){
             }
             if($_GET['login'] == 'erroIndex'){
                $msg = "Faça Login para acessar a Principal";
-               $
             }
         }
       ?>
@@ -59,6 +58,8 @@ if (isset($_SESSION['autenticado'])){
         <label class="form-label fw-bold">Código do Admin</label>
         <input type="text" name="adminCode" class="form-control" placeholder="Código de acesso">
       </div>
+
+      <input type="hidden" name="latest" value=<?php$latest?>>
 
       <input type="hidden" name="acao" value="login">
       <button type="submit" class="btn w-100 text-white fw-bold py-2" style="background-color:#f46f78;">
