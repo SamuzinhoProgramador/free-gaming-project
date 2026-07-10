@@ -59,7 +59,7 @@ if (isset($_SESSION['autenticado'])){
         <input type="text" name="adminCode" class="form-control" placeholder="Código de acesso">
       </div>
 
-      <input type="hidden" name="latest" value=<?php$latest?>>
+      <input type="hidden" name="latest" value=<?php echo $latest;?>>
 
       <input type="hidden" name="acao" value="login">
       <button type="submit" class="btn w-100 text-white fw-bold py-2" style="background-color:#f46f78;">
