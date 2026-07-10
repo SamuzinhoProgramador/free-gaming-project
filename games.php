@@ -1,12 +1,7 @@
 <?php 
-// 1. Inicia ou retoma a sessão ativa do usuário no navegador
 session_start();
-
-// 2. SEGURANÇA NO TOPO: Se o usuário NÃO estiver autenticado...
 if (!isset($_SESSION['autenticado'])){
-    // ...redireciona imediatamente para o login com a mensagem de erro
     header('Location: login.php?login=erroGames');
-    // Para a execução do script aqui para não enviar o HTML abaixo à toa
     exit; 
 }
 ?>
@@ -15,9 +10,10 @@ if (!isset($_SESSION['autenticado'])){
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css"> <title>Free Games</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="icon" href="img/controle.png" type="image/png"> </head>
+  <link rel="icon" href="img/controle.png" type="image/png">
+   <title>Free Games</title>
+</head>
 <body>
   <?php 
     // Como a segurança já foi feita no topo, aqui apenas incluímos o cabeçalho/menu do site
@@ -36,8 +32,8 @@ if (!isset($_SESSION['autenticado'])){
       // Captura o container principal do carrossel
       const root = document.getElementById('carousel-root');
       root.style.position = 'relative';
-      root.style.width = '100vw'; // Largura total da tela
-      root.style.height = '100vh'; // Altura total da tela
+      root.style.width = '70vw'; // Largura total da tela
+      root.style.height = '50vh'; // Altura total da tela
       root.style.overflow = 'hidden'; // Esconde o que passar dos limites da tela
       root.style.background = '#000'; // Fundo preto
 
@@ -65,9 +61,9 @@ if (!isset($_SESSION['autenticado'])){
 
       // Array (lista) de objetos contendo as informações e imagens de cada jogo
       const slides = [
-        {img: 'img/jegue-logo.png', title: 'Esmague o Jegue', desc: 'Divertasse esmagando jegues'},
-        {img: 'img/jump-logo.png', title: 'Mario pula-pula', desc: 'Desafie-se a bater o recorde!'},
-        {img: 'img/bee-logo.png', title: 'Flap Bee', desc: 'Chegue mais longe que seus amigos'}
+        {img: 'img/jegue-logo.png', title: 'Esmague o Jegue', desc: 'Divertasse esmagando jegues', link: 'games/jegue/Inicio.html'},
+        {img: 'img/jump-logo.png', title: 'Mario pula-pula', desc: 'Desafie-se a bater o recorde!', link: 'games/mario-jump/index.html'},
+        {img: 'img/bee-logo.png', title: 'Flap Bee', desc: 'Chegue mais longe que seus amigos', link: 'games/passaro/index.html'}
       ];
 
       // Laço de repetição para criar a estrutura HTML de cada slide com base na lista acima
@@ -79,6 +75,11 @@ if (!isset($_SESSION['autenticado'])){
         slide.style.position = 'relative';
         slide.style.flexShrink = '0'; // Impede o slide de encolher
 
+        //tentativa de criar um a
+        const link = document.createElement('a');
+        link.href = item.link;
+        slide.appendChild(link);
+
         // Cria a imagem do jogo
         const img = document.createElement('img');
         img.src = item.img;
@@ -87,7 +88,7 @@ if (!isset($_SESSION['autenticado'])){
         img.style.height = '100%';
         img.style.objectFit = 'cover'; // Ajusta a imagem sem distorcer
         img.style.display = 'block';
-        slide.appendChild(img);
+        link.appendChild(img);
 
         // Cria o efeito de sombra/degradê escuro na parte de baixo do slide
         const overlay = document.createElement('div');
