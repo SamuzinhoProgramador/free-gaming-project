@@ -14,7 +14,6 @@ if (!isset($_SESSION['autenticado'])){
   <link rel="icon" href="img/controle.png" type="image/png">
   <style>
     body {
-  
   margin: 0;                 /* Remove as margens padrão do navegador */
   display: flex;             /* Ativa o modo Flexbox */
   justify-content: center;   /* Centraliza horizontalmente */
@@ -42,7 +41,7 @@ if (!isset($_SESSION['autenticado'])){
       // Captura o container principal do carrossel
       const root = document.getElementById('carousel-root');
       root.style.position = 'relative';
-      root.style.width = '100vw'; // Largura total da tela
+      root.style.width = '70vw'; // Largura total da tela
       root.style.height = '50vh'; // Altura total da tela
       root.style.overflow = 'hidden'; // Esconde o que passar dos limites da tela
       root.style.background = '#000'; // Fundo preto
@@ -64,8 +63,6 @@ if (!isset($_SESSION['autenticado'])){
       const slider = document.createElement('div');
       slider.style.display = 'flex';
       slider.style.height = '100%';
-      slider.style.width = '80%';
-      slider.style.padding = '10vws'
       slider.style.transition = 'transform 0.8s ease'; // Transição suave ao mudar de slide
       slider.style.willChange = 'transform'; // Otimização de performance para o navegador
       root.appendChild(slider); // Adiciona a esteira dentro do container principal
