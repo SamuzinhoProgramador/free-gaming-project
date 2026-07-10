@@ -12,6 +12,15 @@ if (!isset($_SESSION['autenticado'])){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="icon" href="img/controle.png" type="image/png">
+  <style>
+    body {
+  margin: 0;                 /* Remove as margens padrão do navegador */
+  display: flex;             /* Ativa o modo Flexbox */
+  justify-content: center;   /* Centraliza horizontalmente */
+  align-items: center;       /* Centraliza verticalmente */
+  min-height: 100vh;
+}
+  </style>
    <title>Free Games</title>
 </head>
 <body>
@@ -78,6 +87,7 @@ if (!isset($_SESSION['autenticado'])){
         //tentativa de criar um a
         const link = document.createElement('a');
         link.href = item.link;
+        link.target = "_blank"
         slide.appendChild(link);
 
         // Cria a imagem do jogo
