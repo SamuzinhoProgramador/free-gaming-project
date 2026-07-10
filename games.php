@@ -12,15 +12,6 @@ if (!isset($_SESSION['autenticado'])){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="icon" href="img/controle.png" type="image/png">
-  <style>
-    body {
-  margin: 0;                 /* Remove as margens padrão do navegador */
-  display: flex;             /* Ativa o modo Flexbox */
-  justify-content: center;   /* Centraliza horizontalmente */
-  align-items: center;       /* Centraliza verticalmente */
-  min-height: 100vh;
-}
-  </style>
    <title>Free Games</title>
 </head>
 <body>
@@ -41,7 +32,7 @@ if (!isset($_SESSION['autenticado'])){
       // Captura o container principal do carrossel
       const root = document.getElementById('carousel-root');
       root.style.position = 'relative';
-      root.style.width = '100%'; // Largura total da tela
+      root.style.width = '100vh'; // Largura total da tela
       root.style.height = '50vh'; // Altura total da tela
       root.style.overflow = 'hidden'; // Esconde o que passar dos limites da tela
       root.style.background = '#000'; // Fundo preto
@@ -157,6 +148,8 @@ if (!isset($_SESSION['autenticado'])){
       });
     })();
   </script>
+
+  <table></table>
   
   <?php 
     // Inclui o arquivo de rodapé do site

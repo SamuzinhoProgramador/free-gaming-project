@@ -24,9 +24,16 @@ if (isset($_SESSION['autenticado'])){
     <div class="text-center mb-4">
       <?php 
         $msg = "Login";
+        $latest = "Index";
         if(isset($_GET['login'])) {
-            if($_GET['login'] == 'erroGames') $msg = "Faça Login para acessar os Jogos";
-            if($_GET['login'] == 'erroIndex') $msg = "Faça Login para acessar a Principal";
+            if($_GET['login'] == 'erroGames'){ 
+              $msg = "Faça Login para acessar os Jogos";
+              $latest = "games";
+            }
+            if($_GET['login'] == 'erroIndex'){
+               $msg = "Faça Login para acessar a Principal";
+               $
+            }
         }
       ?>
       <h4 style="color: #d45d65; font-weight: bold;"><?php echo $msg; ?></h4>
