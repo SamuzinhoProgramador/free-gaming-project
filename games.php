@@ -32,7 +32,7 @@ if (!isset($_SESSION['autenticado'])){
       // Captura o container principal do carrossel
       const root = document.getElementById('carousel-root');
       root.style.position = 'relative';
-      root.style.width = '100vh'; // Largura total da tela
+      root.style.width = '100vw'; // Largura total da tela
       root.style.height = '50vh'; // Altura total da tela
       root.style.overflow = 'hidden'; // Esconde o que passar dos limites da tela
       root.style.background = '#000'; // Fundo preto
