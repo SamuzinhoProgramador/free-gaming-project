@@ -1,4 +1,4 @@
-// src/public/js/relogio.js
+//js/relogio.js
 export class Relogio {
   constructor(tempo) {
     this.tempoRestante = tempo; // em segundos
