@@ -59,6 +59,14 @@ if (isset($_SESSION['autenticado'])){
         <input type="text" name="adminCode" class="form-control" placeholder="Código de acesso">
       </div>
 
+      <div class="text-center mb-3">
+        <span class="text-dark opacity-75">Ainda não tem uma conta?</span>
+        <a href="cadastro.php" class="d-inline-block fw-bold link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover ms-1" style="color: #d45d65;">
+          Cadastre-se
+        </a>
+      </div>
+
+
       <input type="hidden" name="latest" value=<?php echo $latest;?>>
 
       <input type="hidden" name="acao" value="login">

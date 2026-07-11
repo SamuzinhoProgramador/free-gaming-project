@@ -2,22 +2,19 @@ function posiçãoRandomica() {
 
     if(document.getElementById('jegue')){
         document.getElementById('jegue').remove();
-        
-        // 1. Primeiro remove o coração visualmente
+
         if (document.getElementById('v' + vidas)) {
             document.getElementById('v' + vidas).src = "imagens/coracao_vazio.png";
         }
         
-        // 2. Depois soma a vida perdida
-        vidas++;
-
-        // 3. Se passou de 3 vidas perdidas, Game Over imediatamente
-        if(vidas > 3){
+        if(vidas >= 3){
             window.location.href = 'fim_de_jogo.html';
-            return; // Para a execução do código aqui
+            return;
         }
-    }
 
+        vidas++;
+    }
+ 
     var posiçãoX = Math.floor(Math.random() * largura) - 90;
     var posiçãoY = Math.floor(Math.random() * altura ) - 90;
 
@@ -33,7 +30,6 @@ function posiçãoRandomica() {
     jegue.id = 'jegue';
     
     jegue.onclick = function() {
-        // Remove o ID para que o IF lá de cima não conte como "vida perdida" enquanto ele some
         this.removeAttribute('id'); 
         this.src = 'imagens/jegue_morto.png';
         setTimeout(() => {
@@ -44,3 +40,17 @@ function posiçãoRandomica() {
     document.body.appendChild(jegue);
     console.log(posiçãoX, posiçãoY);
 }
+
+
+var altura = 0;
+var largura = 0;
+
+function ajustaTamanhoPalcoJogo() {
+ altura = window.innerHeight;
+ largura = window.innerWidth;
+
+ console.log("Largura atual: " + largura, "Altura atual: " + altura); // Para você testar no console
+}
+
+
+

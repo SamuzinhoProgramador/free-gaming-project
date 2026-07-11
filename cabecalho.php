@@ -35,7 +35,7 @@ if (isset($_SESSION['autenticado'])) {
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#f46f78;">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php">
-      <img src="img/Logo_texto.png" alt="Logo" style="width: 220px;">
+      <img src="img/Logo_Texto.png" alt="Logo" style="width: 220px;">
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
