@@ -62,7 +62,7 @@ if (!isset($_SESSION['autenticado'])){
       const slides = [
         {img: 'img/jegue-logo.png', title: 'Esmague o Jegue', desc: 'Divertasse esmagando jegues', link: 'games/jegue/Inicio.html'},
         {img: 'img/jump-logo.png', title: 'Mario pula-pula', desc: 'Desafie-se a bater o recorde!', link: 'games/mario-jump/index.html'},
-        {img: 'img/bee-logo.png', title: 'Flap Bee', desc: 'Chegue mais longe que seus amigos', link: 'games/passaro/index.html'},
+        //{img: 'img/bee-logo.png', title: 'Flap Bee', desc: 'Chegue mais longe que seus amigos', link: 'games/passaro/index.html'},
         {img: 'img/bomba.jpg', title: 'Mine Sweeper', desc: 'Não exploda', link: 'games/mineSweeper/index.html'}
       ];
 

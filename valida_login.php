@@ -102,7 +102,7 @@ elseif ($acao === 'cadastro') {
     $_SESSION['usuario_nome'] = $newName;
     $_SESSION['autenticado'] = 'yes';
     $_SESSION['is_admin'] = false;
-    header('Location: '.$latest.'.php');
+    header('Location: index.php');
     exit;
 }
 ?>

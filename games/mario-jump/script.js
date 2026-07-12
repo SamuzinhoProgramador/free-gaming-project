@@ -12,7 +12,7 @@ const jump = (event) => {
 
     if(event.code === 'Space' || event.code === 'ArrowUp' || event.code === 'KeyW'){
         mario.classList.add('jump');
-        mario.src = "mario pula.png";
+        mario.src = "jumping.png";
         mario.style.paddingLeft = '70px';
         mario.style.width = '160px';
 

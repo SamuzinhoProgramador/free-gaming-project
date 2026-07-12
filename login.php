@@ -68,7 +68,9 @@ if (isset($_SESSION['autenticado'])){
 
 
       <input type="hidden" name="latest" value=<?php echo $latest;?>>
-
+      <p>Atenção: o login ainda não possui nenhuma função além de ser necessaria </p>
+      <p>para entrar em outras abas, e está aqui somente para demonstrar uma parte</p>
+      <p>do meu conhecimentoem criação de sistemas de login</p>
       <input type="hidden" name="acao" value="login">
       <button type="submit" class="btn w-100 text-white fw-bold py-2" style="background-color:#f46f78;">
         ENTRAR

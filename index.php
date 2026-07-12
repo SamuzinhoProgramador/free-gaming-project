@@ -19,9 +19,11 @@
     include("cabecalho.php");
   ?>
   <div style="height: 200px;">
-  <!--conteudo-->
+  <p>"Olá! Bem-vindo ao meu portfólio. Este site foi criado por <a href="https://github.com/SamuzinhoProgramador">SamuzinhoProgramador</a>,</p>
+  <p>com a colaboração de <a href="https://github.com/devc-a">devc-a</a>, para expor os projetos e jogos em que temos trabalhado juntos.</p>
+  <p>Tudo o que você vê por aqui foi desenvolvido com muito PHP, HTML, CSS e JavaScript.</p>
+  <p> Fique à vontade para explorar!"</p>
   </div>
   <?php include("rodapé.php"); ?>
-    
   </body>
 </html>
