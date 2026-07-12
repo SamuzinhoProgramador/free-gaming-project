@@ -14,7 +14,7 @@
   <style>
     .esplicação{
       font-size: 25px;
-      padding:15px;
+      padding:30px;
     }
   </style>
   <title>Free Games</title>
