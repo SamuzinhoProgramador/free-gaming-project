@@ -14,6 +14,7 @@
   <style>
     .esplicação{
       font-size: 25px;
+      padding:15px;
     }
   </style>
   <title>Free Games</title>
@@ -24,10 +25,7 @@
     include("cabecalho.php");
   ?>
   <div style="height: 200px;">
-  <p class=esplicação>"Olá! Bem-vindo ao meu portfólio. Este site foi criado por <a href="https://github.com/SamuzinhoProgramador">SamuzinhoProgramador</a>,</p>
-  <p class=esplicação>com a colaboração de <a href="https://github.com/devc-a">devc-a</a>, para expor os projetos e jogos em que temos trabalhado juntos.</p>
-  <p class=esplicação>Tudo o que você vê por aqui foi desenvolvido com muito PHP, HTML, CSS e JavaScript.</p>
-  <p class=esplicação> Fique à vontade para explorar!"</p>
+  <p class=esplicação>"Olá! Bem-vindo ao meu portfólio. Este site foi criado por <a href="https://github.com/SamuzinhoProgramador">SamuzinhoProgramador</a>, com a colaboração de <a href="https://github.com/devc-a">devc-a</a>, para expor os projetos e jogos em que temos trabalhado juntos. Tudo o que você vê por aqui foi desenvolvido com muito PHP, HTML, CSS e JavaScript. Fique à vontade para explorar!"</p>
   </div>
   <?php include("rodapé.php"); ?>
   </body>
