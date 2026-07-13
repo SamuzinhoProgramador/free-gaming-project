@@ -21,6 +21,7 @@
   <title>Free Games</title>
 </head>
 <body>
+<main>
   <?php
 
     include("cabecalho.php");
@@ -28,6 +29,7 @@
   <div style="height: 200px;">
   <p class=esplicação>"Olá! Bem-vindo ao meu portfólio. Este site foi criado por <a href="https://github.com/SamuzinhoProgramador">SamuzinhoProgramador</a>, com a colaboração de <a href="https://github.com/devc-a">devc-a</a>, para expor os projetos e jogos em que temos trabalhado juntos. Tudo o que você vê por aqui foi desenvolvido com muito PHP, HTML, CSS e JavaScript. Fique à vontade para explorar!"</p>
   </div>
+  </main>
   <?php include("rodapé.php"); ?>
   </body>
 </html>

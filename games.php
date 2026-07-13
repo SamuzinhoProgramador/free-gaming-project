@@ -21,6 +21,8 @@ if (!isset($_SESSION['autenticado'])){
     include("cabecalho.php");
   ?>
 
+  <main>
+
   <div id="carousel-root"></div>
 
   <script>
@@ -151,7 +153,7 @@ if (!isset($_SESSION['autenticado'])){
     })();
   </script>
 
-  <table></table>
+  </main>
   
   <?php 
     // Inclui o arquivo de rodapé do site
