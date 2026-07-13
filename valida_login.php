@@ -13,7 +13,7 @@ $password = $_POST['password'] ?? '';
 $isAdmin = !empty($_POST['isAdmin']); 
 $AdminCode = trim((string)($_POST['adminCode'] ?? ''));  
 
-$latest = $_POST['latest'];
+$latest = $_POST['latest'] ?? '';
 
 $newName = $_POST['nameNew'] ?? '';       
 $newEmail = $_POST['emailNew'] ?? '';     
