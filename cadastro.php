@@ -33,6 +33,8 @@
         <input type="password" name="passwordNew" class="form-control" placeholder="Crie uma senha forte" required>
       </div>
 
+      <p>Atenção: o login ainda não possui nenhuma função além de ser necessaria para entrar em outras abas, e está aqui somente para demonstrar uma parte do meu conhecimentoem criação de sistemas de login</p>
+
       <input type="hidden" name="acao" value="cadastro">
       <button type="submit" class="btn w-100 text-white fw-bold py-2" style="background-color:#f46f78;">
         CADASTRAR AGORA
